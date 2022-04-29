@@ -24,6 +24,7 @@ blocks:
           - checkout
           - cache restore
           - pip install --cache-dir .pip_cache -r requirements.txt
+          - pip install martor
       jobs:
         - name: Unit tests
           commands:
